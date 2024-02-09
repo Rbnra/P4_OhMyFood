@@ -1,0 +1,14 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+  "sass":"npx sass --watch ./sass/style.scss:style.css"
+  },
+  "author": "Benaboura Rime",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+}

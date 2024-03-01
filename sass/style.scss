@@ -1,31 +1,9 @@
-body {
-    width: 100%;
-    margin: auto;
-  }
-
-
-header{
-    display: flex;
-    justify-content: center;
-    margin: 2%;
-}
-
-.info__location {
-    background-color: #EAEAEA;
-padding: 1%;
-display: flex;
-}
-
-.location{
-display: flex;
-
-}
-
-.couleurs{
-    color:violet;
-}
-
-#id{
-    background-color: pink;
-    
-}
+@import "./Animation/animations.scss";
+@import "./Animation/mixins.scss";
+@import "./Animation/variables.scss";
+@import "./Base/texte_box.scss";
+@import "./Buttons_Loading/Buttons.scss";
+@import "./Buttons_Loading/Loading.scss";
+@import "./Layout/all_layout.scss";
+@import "./Pages/index.scss";
+@import "./Pages/pages_menu.scss";

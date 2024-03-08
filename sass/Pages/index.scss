@@ -21,16 +21,7 @@ header img {
     margin: 20px 0px 20px 90px;
 }
 
-
-.arrow {
-    position: relative;
-    top: 30px;
-    margin-left: 17px;
-    transition: all 300ms ease-out;
-    font-size: 22px;
-}
-
-.header__locate {
+.header_locate {
     display: flex;
     height: 50px;
     justify-content: center;
@@ -52,25 +43,20 @@ header img {
     }
 }
 
-.header__img {
-    width: 100%;
-    height: 38vh;
-    object-fit: cover;
-}
+/*Section one*/
 
-
-.section__one {
+.section_one {
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: #F6F6F6;
-    padding-bottom: 3%;
+    padding-bottom: 50px;
+    width: 100%;
 
     & h1 {
         width: 100%;
-        margin: 10px 0;
+        margin: 40px 0px 0px 0px;
         font-size: 24px;
-        line-height: 1;
         font-weight: 700;
     }
 
@@ -84,27 +70,46 @@ header img {
     }
 }
 
-.section__two {
-    padding: 50px 130px 50px 130px;
+/*Section two*/
+
+.section_two {
+    width: 100%;
+    margin: auto;
+    padding: 50px 0;
 }
 
-.section__button {
+.section_title1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.section_button {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 85%;
+    padding-bottom: 10px;
+    margin: auto;
 }
 
-.section__button--main {
+.section__button_main {
+    display: flex;
+    justify-content: center;
     font-weight: 500;
     font-size: 16px;
-    width: 30%;
-    height: 72px;
+    line-height: 65px;
+    width: 100%;
+    height: 72.38px;
     border-radius: 20px;
     border-style: none;
-    background-color: $color-button;
-    @include button-main;
+    background-color: #F6F6F6;
+    margin: 5px 0px;
+    box-shadow: 0 4px 10px 0 #d5d5d5;
 
     & i {
-        margin-right: 7%;
+        margin-right: 25px;
+        margin-top: 25px;
     }
 
     &:hover {
@@ -118,6 +123,24 @@ header img {
     color: $color-primary;
 }
 
+.section__button_number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    left: -10px;
+    bottom: -55px;
+    width: 24px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #9356DC;
+    padding: 4px;
+    border: none;
+}
+
+/*Menu restaurants*/
+
 .card--img {
     width: 100%;
     height: 60%;
@@ -127,21 +150,6 @@ header img {
     object-fit: cover;
 }
 
-
-.section__button--number {
-    border-style: none;
-    font-size: 16px;
-    font-weight: 500;
-    width: 24px;
-    height: 24px;
-    border-radius: 24px;
-    position: relative;
-    top: 2vh;
-    transform: translateX(50%);
-    background-color: $color-primary;
-    color: white;
-}
-
 .section__restaurant {
     background-color: #F6F6F6;
     margin-left: 18%;
@@ -149,7 +157,7 @@ header img {
     padding-bottom: 60px;
 }
 
-.section__menu--title {
+.section_menu--title {
     border-radius: 40px 40px 0px 0px;
     background-color: #F6F6F6;
     position: relative;
@@ -198,7 +206,7 @@ header img {
     margin-top: 5%;
 }
 
-.menu__card {
+.menu_card {
     border-radius: 15px;
     width: 63%;
     margin-bottom: 15px;

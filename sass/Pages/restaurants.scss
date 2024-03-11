@@ -170,11 +170,6 @@ header img {
     font-weight: 500;
 }
 
-.menu_card {
-    height: 10px;
-    margin: auto;
-    border-radius: 15px;
-}
 
 article.card {
     display: flex;
@@ -264,12 +259,8 @@ article.card {
 .menu_card {
     display: flex;
     flex-direction: column;
-    margin: 15px;
-    margin-bottom: 18px;
-    border-radius: 15px 15px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 10px 0 #d5d5d5;
-    border: 15px;
+    margin: 35px;
+    height: 0px;
 
     @include box-shadow();
 
@@ -295,56 +286,35 @@ article.card {
     }
 }
 
-.menu__description {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+.button__like {
+    width: 28px;
+    z-index: 0;
+    position: relative;
+    font-family: "Font Awesome 5 Free";
+    font-size: 25px;
+    padding: 0;
+    border: transparent 0px solid;
+    background-color: transparent;
+    -webkit-text-stroke: 1px white;
     cursor: pointer;
 }
 
-.menu__card--price {
-    font-size: 15px;
-    font-weight: 700;
-    margin-left: auto;
-    position: relative;
-    margin-top: 6%;
-    margin-right: 3%;
 
-    &:hover {
-        cursor: pointer;
-    }
+
+.restaurant__cards--like {
+    position: absolute;
+    top: 76%;
+    right: 7%;
+    font-size: 25px;
 }
 
-.button__check {
-    border-radius: 0px 15px 15px 0px;
-    left: 100%;
-    background: $color-tertiary;
-    border-style: none;
-    margin-right: -4rem;
-    width: 4rem;
-    transition: all 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.button__like:hover::after {
+    z-index: 1;
+    animation: heart-fill 900ms forwards cubic-bezier(0.65, 1.01, 0.98, 1.06);
 }
 
-.button__check i {
-    color: white;
-    font-size: 20px;
-    border-radius: 15px;
-}
 
-.check {
-    color: white;
-    padding: 20px 0 0 20px;
-}
 
-.section__button--gradient {
-    @include button-gradient
-}
 
 
 
@@ -377,4 +347,85 @@ footer {
     font-weight: 500;
     gap: 7px;
     margin-bottom: -20px;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    /*Header*/
+
+    header img {
+        width: 30%;
+    }
+
+    /*Fonctionnement*/
+
+    .section_button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .section__button_main {
+        width: 30%;
+    }
+
+    .section__button_number {
+        position: relative;
+        left: 5px;
+        bottom: -30px;
+        height: 24px;
+    }
+
+    /*Menus*/
+
+    .section_menus {
+        height: 730px;
+        margin-bottom: -10px;
+    }
+
+    .menu_card {
+        flex-wrap: wrap;
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    article.card {
+        width: 48%;
+        margin-bottom: 4%;
+    }
+
+    /*Footer*/
+
+    .footer {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        height: 70px;
+        gap: 16px;
+    }
+
+    .footer__bloc {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: flex-end;
+    }
+
+    .footer__nav {
+        margin-right: 25px;
+    }
+
+    .footer__logo {
+        width: 137px;
+        margin: 0px -25px -20px 20px;
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 1023.98px) {
+
+    header img {
+        width: 100px;
+    }
 }

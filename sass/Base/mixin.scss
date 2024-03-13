@@ -4,14 +4,7 @@
     filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));  
 }
 
-@mixin heart { 
-    background-image: linear-gradient(to top, $color-primary 20%, $color-secondary 100%);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-image: $color-gradient;  
-    
-}
+
 
 @mixin button-gradient {
     background: $color-gradient;
@@ -30,7 +23,4 @@
         transition: transform .5s;
         box-shadow: 5px 5px 18px 3px (#868686);
     }    
-}
-@mixin button-main {
-    box-shadow: 2px 1px 8px -5px(black) ;
 }

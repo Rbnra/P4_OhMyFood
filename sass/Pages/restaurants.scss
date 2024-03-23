@@ -372,7 +372,7 @@ footer {
 }
 
 
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1024px) and (max-width: 1920px) {
 
     /*Header*/
 
@@ -526,12 +526,15 @@ footer {
     gap: 2%;
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .race-cards__description {
     white-space: nowrap;
     width: 100%;
     padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .race-cards__description h4 {
@@ -544,6 +547,8 @@ footer {
     margin: 0;
     font-weight: 300;
     font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .race-cards__price {

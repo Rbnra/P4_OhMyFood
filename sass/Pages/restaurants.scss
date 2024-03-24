@@ -150,9 +150,9 @@ header img {
 .section_menus {
     display: flex;
     flex-direction: column;
-    margin-bottom: 150px;
+    padding-bottom: 50px;
     background-color: #F6F6F6;
-    height: 1055px;
+    height: 1155px;
 }
 
 .card_new {
@@ -333,7 +333,7 @@ footer {
 
     .section_menus {
         height: 730px;
-        margin-bottom: -10px;
+        margin-bottom: -80px;
     }
 
     .menu_card {
@@ -412,7 +412,7 @@ footer {
 
     .section_menus {
         margin-bottom: 0;
-        height: 800px;
+        height: 700px;
     }
 
     .menu_card {

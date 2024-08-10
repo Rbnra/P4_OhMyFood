@@ -6,7 +6,7 @@
   "scripts": {
   "sass":"npx sass --watch ./sass/style.scss:style.css"
   },
-  "author": "Benaboura Rime",
+  "author": "BR",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.70.0"
